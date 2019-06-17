@@ -2,7 +2,7 @@ data "aws_route53_zone" "zone" {
   zone_id = "${var.hosted_zone_id}"
 }
 
-data "aws_iam_policy_document" "ec2-route53-regitrar" {
+data "aws_iam_policy_document" "ec2_route53_registrar" {
   statement {
     actions   = [
       "route53:GetHostedZone",
