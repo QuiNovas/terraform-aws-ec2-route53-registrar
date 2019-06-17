@@ -4,13 +4,13 @@ variable "dead_letter_arn" {
 }
 
 variable "dns_name_prefix" {
-  default `   = ""
+  default     = ""
   description = "The prefix to put before the record name."
   type        = "string"
 }
 
 variable "dns_name_suffix" {
-  default `   = ""
+  default     = ""
   description = "The suffix to put after the record name."
   type        = "string"
 }
