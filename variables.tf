@@ -40,7 +40,7 @@ variable "kms_key_arn" {
 variable "multi_value_answer" {
   default     = false
   description = "If false, the new label will be dns_name_prefix + ec2-dns-label + dns_name_prefix. If true, the new label will be dns_name_prefix + dns_name_prefix. Defaults to false"
-  type        = string
+  type        = bool
 }
 
 variable "name_prefix" {

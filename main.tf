@@ -24,12 +24,10 @@ module "ec2_route53_registrar" {
     aws_iam_policy.ec2_route53_registrar.arn,
     "arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess",
   ]
-
-  policy_arns_count = 2
   runtime           = "python3.7"
   source            = "QuiNovas/lambdalambdalambda/aws"
   timeout           = 300
-  version           = "3.0.0"
+  version           = "3.0.1"
 }
 
 resource "aws_iam_policy" "ec2_route53_registrar" {
